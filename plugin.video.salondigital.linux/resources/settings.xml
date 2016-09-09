@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<setting type="number" id="MAIN" label="Vista principal" default="500" enable="!eq(-1,false)"/>
+	<setting type="bool" id="auto-view" label="Fijar vista" default="true"/>
+	<setting type="text" id="email" label="Email:" default=""/>
+	<setting type="text" id="pass" label="Contraseña:" default=""/>
+</settings>
