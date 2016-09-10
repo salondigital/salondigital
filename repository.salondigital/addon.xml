@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.salondigital" name="Repositorio oficial de SalonDigital" version="1.0.0" provider-name="Tocinillo">
+	<extension point="xbmc.addon.repository" name="Repositorio oficial de SalonDigital">
+		<info compressed="false">https://raw.githubusercontent.com/salondigital/salondigital/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/salondigital/salondigital/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/salondigital/salondigital/tree/master</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Repositorio oficial de SalonDigital</summary>
+		<description>Repositorio oficial de SalonDigital</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
