@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <coordinates>
+        <left>485</left>
+        <top>345</top>
+    </coordinates>
+    <controls>
+        <control type="group">
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>950</width>
+                <height>450</height>
+                <texture border="2">Background/loguploader-dialog-bg.png</texture>
+            </control>
+            <control type="image" id="101">
+                <left>10</left>
+                <top>10</top>
+                <width>930</width>
+                <height>430</height>
+            </control>
+            <control type="label" id="102">
+                <description>header label</description>
+                <posx>0</posx>
+                <posy>20</posy>
+                <width>950</width>
+                <height>40</height>
+                <font>font13</font>
+                <label></label>
+                <align>center</align>
+                <aligny>center</aligny>
+            </control>
+            <control type="image" id="103">
+                <left>20</left>
+                <top>70</top>
+                <width>300</width>
+                <height>300</height>
+                <aspectratio aligny="center" align="center">keep</aspectratio>
+            </control>
+            <control type="textbox" id="104">
+                <left>40</left>
+                <top>70</top>
+                <width>570</width>
+                <height>300</height>
+                <font>font10</font>
+                <align>left</align>
+                <aligny>top</aligny>
+                <pagecontrol>105</pagecontrol>
+                <onup>105</onup>
+                <ondown>105</ondown>
+                <onleft>105</onleft>
+                <onright>105</onright>
+            </control>
+        </control>
+    </controls>
+</window>
