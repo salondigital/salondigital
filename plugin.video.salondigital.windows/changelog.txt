@@ -1,2 +1,0 @@
-v1.0.0 (24/08/2016)
-- Lanzmiento inicial
