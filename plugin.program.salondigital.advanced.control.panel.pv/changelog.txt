@@ -1,0 +1,2 @@
+V 1.0
+-Primera version del nuevo addon para clientes de www.salondigital.es
