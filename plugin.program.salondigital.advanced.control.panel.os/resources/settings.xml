@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<category label="Login">		
+		<setting type="text" id="login" label="Email de usuario:" default=""/>
+		<setting type="text" id="pass" label="Password:" default=""/>
+		<setting type="text" id="Verify:" label="[COLOR red]Debes estar registrado y dado de alta en http://salondigital.es/foro/viewtopic.php?f=21&t=344[/COLOR]" default=""/>			
+	</category>
+	<category label="Opciones de SalonDigital">
+	    <setting type="lsep" label="Version actual:"/>
+		<setting id="buildname" type="text" label="Nombre del sistema:" enable="true" default=""/>
+		<setting id="defaultskin" type="text" label="Skin predeterminada:" enable="true" default="" visible="true"/>
+		<setting id="defaultskinname" type="text" label="Skin de SalonDigital:" enable="true" default="" visible="true"/>
+		<setting id="defaultskinignore" type="bool" label="Ignorar comprobacion de skin de SalonDigital al inicio:" enable="true" default="false" visible="true"/>
+		<setting id="buildversion" type="text" label="Version Instalada:" enable="true" default=""/>
+		<setting id="buildtheme" type="text" label="Tema actual:" enable="false" default=""/>
+		<setting id="latestversion" type="text" label="Ultima Version disponible:" enable="false" default=""/>
+		<setting id="lastbuildcheck" type="text" label="Comprobar ultima version:" enable="false" default=""/>
+		<setting id="disableupdate" type="bool" label="Desactivar notificaciones de actualizaciones pendientes" default="false"/>
+		<setting id="installmethod" type="enum" label="Despues de la instalación:" values="Preguntar siempre|Recargar Perfil|Forzar Cierre" enable="!eq(-4,false)"/>			
+		<setting id="installed" type="bool" label="Actualizacion Instalada" visible="false" default="false" />
+		<setting id="extract" type="text" label="Extrayendo actualizacion %" visible="false" default="100" />
+		<setting id="errors" type="text" label="Error de descompresion" visible="false" default="" />	
+		<setting id="default.enablerssfeeds" type="text" label="Default lookandfeel.enablerssfeeds:" enable="false" default="" visible="false"/>
+		<setting id="default.font" type="text" label="Default lookandfeel.font:" enable="false" default="" visible="false"/>
+		<setting id="default.rssedit" type="text" label="Default lookandfeel.rssedit:" enable="false" default="" visible="false"/>
+		<setting id="default.skincolors" type="text" label="Default lookandfeel.skincolors:" enable="false" default="" visible="false"/>
+		<setting id="default.skintheme" type="text" label="Default lookandfeel.skintheme:" enable="false" default="" visible="false"/>
+		<setting id="default.skinzoom" type="text" label="Default lookandfeel.skinzoom:" enable="false" default="" visible="false"/>
+		<setting id="default.soundskin" type="text" label="Default lookandfeel.soundskin:" enable="false" default="" visible="false"/>
+		<setting id="default.startupwindow" type="text" label="Default lookandfeel.startupwindow:" enable="false" default="" visible="false"/>
+		<setting id="default.stereostrength" type="text" label="Default lookandfeel.stereostrength:" enable="false" default="" visible="false"/>
+		<setting id="default.addonupdate" type="text" label="Default general.addonupdate:" enable="false" default="" visible="false"/>
+		<setting id="pvrclient" type="text" label="Activar PVR:" enable="false" default="" visible="false"/>
+	</category>
+
+	<category label="Mantenimiento">		
+		<setting type="lsep" label="Subir Log: "/>
+		<setting id="email" type="text" label="E-Mail" />
+		<setting id="oldlog" type="bool" label="Incluir log antiguo de Kodi" default="false"/>
+		<setting id="wizlog" type="bool" label="Incluir log del addon" default="false"/>
+		<setting id="crashlog" type="bool" label="Incluir logs de crasheo" default="false"/>
+		<setting type="lsep" label="Menu Mantenimiento: "/>
+		<setting id="showmaint" type="bool" label="Mostrar todas las secciones de mantenimiento" default="false"/>
+		<setting type="lsep" label="Localizacion de Backup: "/>
+		<setting id="path" type="folder" label="Elegir localizacion de la copia de seguridad" default=""/>
+		<setting type="lsep" label="Auto Limpieza en el inicio:"/>
+		<setting id="autoclean" type="bool" label="Activar auto-limpieza" default="true"/>
+		<setting id="clearcache" type="bool" label="Limpieza de cache en el inicio:" default="true" enable="!eq(-1,false)"/>
+		<setting id="clearpackages" type="bool" label="Limpieza de paquetes en el inicio:" default="true" enable="!eq(-2,false)"/>
+		<setting id="clearthumbs" type="bool" label="Limpieza de miniaturas en el inicio:" default="false" enable="!eq(-3,false)"/>
+		<setting id="autocleanfeq" type="enum" label="Limpiar automáticamente al inicio cada:" values="Siempre|Diario|3 Dias|Semanal" enable="!eq(-4,false)"/>
+		<setting id="nextautocleanup" type="text" label="Proxima auto limpieza: " enable="false" visible="false" default=""/>
+		<setting type="lsep" label="Limpieza de cache de video:"/>
+		<setting id="includevideo" type="bool" label="Incluir addons de video en limpieza de Cache: " default="false"/>
+		<setting id="includeall" type="bool" label="Incluir todos los addons: " default="false" enable="!eq(-1,false)" visible="!eq(-1,false)"/>
+   	</category>  	
+	
+	<category label="Ajustes de instalacion">
+		<setting type="lsep" label="Mantener Ajustes al instalar actualizaciones:"/>
+		<setting id="keepfavourites" type="bool" label="Mantener mis favoritos" default="false"/>
+		<setting id="keepsources" type="bool" label="Mantener mis fuentes" default="false"/>
+		<setting id="keepprofiles" type="bool" label="Mantener mis perfiles" default="false"/>
+		<setting id="keepadvanced" type="bool" label="Mantener mi Advancedsettings.xml" default="false"/>
+		<setting id="keeprepos" type="bool" label="Mantener repositorios instalados" default="false"/>
+		<setting id="keepsuper" type="bool" label="Mantener Super Favoritos" default="false"/>
+		<setting id="notify" type="bool" label="Desactivar notificaciones al iniciar Kodi" />
+		<setting id="noteid" type="text" label="Ultima notificacion" visible="false" />
+		<setting id="notedismiss" type="bool" label="Descartar o recordarmelo mas tarde" visible="false" />
+		<setting id="keepwhitelist" type="bool" label="Mantener mi Whitelist de addons" default="false"/>
+	</category>
+
+	<category label="Ajustes de Trakt">
+		<setting type="lsep" label="Guardar datos de Trakt:"/>
+		<setting id="keeptrakt" type="bool" label="Mantener mis datos de Trakt" default="false"/>
+		<setting id="exodus" type="text" label="Exodus: " enable="false" default=""/>
+		<setting id="specto" type="text" label="Specto: " enable="false" default=""/>
+		<setting id="trakt" type="text" label="Trakt: " enable="false" default=""/>
+		<setting id="traktlastsave" type="text" label="Ultimo guardado de los datos de Trakt: " enable="false" default=""/>
+	</category>
+	
+	<category label="Ajustes de Real Debrid">
+		<setting type="lsep" label="Guardar datos de Real Debrid:"/>
+		<setting id="keepdebrid" type="bool" label="Mantener mis datos de Debrid" default="false"/>
+		<setting id="realexodus" type="text" label="Exodus: " enable="false" default=""/>
+		<setting id="realspecto" type="text" label="Specto: " enable="false" default=""/>
+		<setting id="urlresolver" type="text" label="Url Resolver: " enable="false" default=""/>
+		<setting id="debridlastsave" type="text" label="Ultimo guardado de los datos de Real Debrid: " enable="false" default=""/>
+	</category>
+	
+	<category label="Ajustes de Login">
+		<setting type="lsep" label="Guardar datos de login:"/>
+		<setting id="keeplogin" type="bool" label="Mantener mis datos de Login" default="false"/>
+		<setting id="loginlastsave" type="text" label="Ultimo guardado de los datos de Login: " enable="false" default=""/>
+	</category>
+	
+	<category label="Otros">
+		<setting id="developer" type="bool" label="Mostrar Menu de desarrollador: " enable="true" default="false" visible="false"/>
+		<setting id="auto-view" type="bool" label="Activar Auto Vista" default="true"/>
+		<setting id="viewType" type="number" label="Tipo de vista" default="50" enable="!eq(-1,false)"/>
+		<setting type="lsep" label="Notification Window on Startup:"/>
+		<setting id="notify" type="bool" label="Desactivar Notificacion al iniciar" />
+		<setting id="noteid" type="text" label="Ultima notificacion" visible="false" />
+		<setting id="notedismiss" type="bool" label="Descartar o recordarmelo mas tarde" visible="false" />
+	</category>
+
+	<category label="Log">
+		<setting type="lsep" label="Eventos para el Log de SalonDigital:"/>
+		<setting id="addon_debug" type="bool" label="Activar Debug: " enable="true" default="true"/>
+		<setting type="lsep" visible="!eq(-1,false)" label="Level 0: Ninguno"/>
+		<setting type="lsep" visible="!eq(-2,false)" label="Level 1: Normal"/>
+		<setting type="lsep" visible="!eq(-3,false)" label="Level 2: Completo"/>
+		<setting id="debuglevel" type="enum" label="¿Que nivel de log prefieres?" visible="!eq(-4,false)" enable="!eq(-1,false)" values="Level 0|Level 1|Level 2" default="2"/>
+		<setting id="wizardlog" type="bool" label="Activar escritura del log de actualizaciones: " visible="!eq(-5,false)" enable="true" default="false"/>
+		<setting id="autocleanwiz" type="bool" label="Auto limpieza del log de actualizaciones: " visible="!eq(-6,false)" enable="!eq(-1,false)" default="false"/>
+		<setting id="wizlogcleanby" type="enum" label="Autolimpieza del Log de actualizaciones por " visible="!eq(-1,false)" values="Dias|Tamaño|Lineas" default="1"/>
+		<setting id="wizlogcleandays" type="enum" label="¿Cuantos dias mantener log de actualizaciones?" visible="eq(-1,0)+!eq(-2,false)" values="1 Dia|2 Dias|3 Dias|7 Dias" default="2"/>
+		<setting id="wizlogcleansize" type="enum" label="¿Tamaño maximo para el log de actualizaciones?" visible="eq(-2,1)+!eq(-3,false)" values="100 KB|200 KB|300 KB|400 KB|500 KB|1 MB" default="1"/>
+		<setting id="wizlogcleanlines" type="enum" label="¿Cuantas lineas para el log de actualizaciones?" visible="eq(-3,2)+!eq(-4,false)" values="100|200|300|400|500" default="2"/>
+		<setting id="nextcleandate" type="text" label="Proxima limpieza del log de actualizaciones:" visible="false" default=""/>
+	</category>
+</settings>
