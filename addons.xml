@@ -80,7 +80,6 @@
   </assets>
   </extension>
 </addon>
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.program.salondigital.advanced.control.panel.os" name="[B]SalonDigital Advanced Control Panel[/B]" version="1.0" provider-name="SalonDigital">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -110,5 +109,25 @@
     <screenshot>resources/screenshots/screenshot5.jpg</screenshot>
   </assets>
   </extension>
+</addon>
+<addon id="plugin.video.salondigital.linux" name="SalonDigital OS Updater" version="4.0.1" provider-name="SalonDigital">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>SalonDigital OS Updater</summary>
+		<description>Addon de soporte exclusivo de clientes. Por favor, registrese en http://salondigital.es/foro</description>
+		<disclaimer></disclaimer>
+		<platform>linux</platform>
+		<language>es</language>
+		<license>Commercial</license>
+		<forum></forum>
+		<website>http://salondigital.es</website>
+		<source></source>
+		<email>salondigitalpedidos@gmail.com</email>
+	</extension>
 </addon>
 </addons>
