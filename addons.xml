@@ -80,7 +80,7 @@
   </assets>
   </extension>
 </addon>
-<addon id="plugin.program.salondigital.advanced.control.panel.os" name="[B]SalonDigital Advanced Control Panel[/B]" version="1.0" provider-name="SalonDigital">
+<addon id="plugin.program.salondigital.advanced.control.panel.os" name="[B]SalonDigital Advanced Control Panel[/B]" version="1.0.3" provider-name="SalonDigital">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
